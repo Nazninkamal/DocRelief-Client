@@ -16,8 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We provide a simple and easy booking online software system. So, the user could view all those services provided by the clinic, select the specialist, availability of doctors, and appointment date. The time and date will be chosen after confirming the doctor’s availability. Our main aim is to provide simple and effective online services for doctor appointments.
 
 ### `npm run build`
 
