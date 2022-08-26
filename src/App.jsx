@@ -6,6 +6,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
        <Route path="appoinment" element={<PrivateRoute><Appoinment/></PrivateRoute>}/>
        <Route path="login" element={<Login/>}/>
        <Route path="register" element={<Register/>}/>
+       <Route path="dashboard" element={<Dashboard
+       />}/>
       </Routes>
       </AuthProvider>
     </div>

@@ -6,7 +6,7 @@ import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import useAuth from '../../../hooks/useAuth';
+import useAuth from './../../../hooks/useAuth';
 
 const style = {
     position: 'absolute',
@@ -43,7 +43,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         // send to the server
-        fetch('http://localhost:5000/appointments', { 
+        fetch('http://localhost:5000/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

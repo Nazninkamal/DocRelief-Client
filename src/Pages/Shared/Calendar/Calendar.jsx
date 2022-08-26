@@ -7,7 +7,7 @@ import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 
 
 
-const Calender = ({date, setDate}) => {
+const Calendar = ({date, setDate}) => {
     return (
       <LocalizationProvider dateAdapter={AdapterDateFns}>
   <StaticDatePicker
@@ -24,4 +24,4 @@ const Calender = ({date, setDate}) => {
     );
 };
 
-export default Calender;
+export default Calendar;
