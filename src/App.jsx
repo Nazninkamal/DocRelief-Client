@@ -9,11 +9,12 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
+import AddDoctor from './Pages/Dashboard/AddDoctor/AddDoctor';
 
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <AuthProvider>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +27,7 @@ function App() {
        <Route path="dashboard" element={<PrivateRoute><Dashboard/> </PrivateRoute>}>
             <Route  path="dashboardHome" element={<DashboardHome/>}/>
             <Route  path="makeAdmin" element={<MakeAdmin/>}/>
-            <Route  path="makeAdmin" element={<MakeAdmin/>}/>
+            <Route  path="addDoctor" element={<AddDoctor/>}/>
            
             
        </Route>

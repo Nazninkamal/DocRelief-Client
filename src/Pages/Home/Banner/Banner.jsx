@@ -1,47 +1,68 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
+import { Button, Container, Grid, InputAdornment, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import chair from  '../../../images/chair.png';
-import bg from '../../../images/bg.png'
+import bottomimg from '../../../images/bottom-bg.png'
+import SearchIcon from '@mui/icons-material/Search';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-const bannerBg={
-  background: `url(${bg})`,
-}
 
-const varticalCenter={
-  display:'flex',
-  alignItems: 'center',
-  height: 450
+// const varticalCenter={
+//   display:'flex',
+//   alignItems: 'center',
+//   height: 450
 
-}
+// }
 
 const Banner = () => {
     return (
-    <Container style={bannerBg} sx={{ flexGrow: 1 }}>
-       <Grid container spacing={2} >
-        <Grid item xs={12} sm={6} md={6} sx={{...varticalCenter  ,textAlign:'left'}}>
-          <Box>
-          <Typography variant='h3'>Your New Smile <br /> 
-          Start Here</Typography>
-          <Typography variant='h6' sx={{fontSize:14, color:'gray', fontWaight: 300, my:3}} >Lorem ipsum dolor sit 
-            amet, consectetur adipisicing elit. Veritatis, nulla? 
-            Incidunt ea blanditiis ullam asperiores, nesciunt a atque placeat 
-            quibusdam aliquid quia, eveniet molestiae nemo repudiandae 
-            dignissimos rerum excepturi nihil.
-            </Typography>
-         
-            <Button variant='contained' style={{backgroundColor: '#4dabf5'}}>GET APPOINMENT</Button>
-            </Box>
-        </Grid>
+    <Box sx={{ flexGrow: 1 }}>
+     
+      <Box sx={{mt: 10}}>
+         <Typography variant='h3' sx={{color: "#272b41", marginBottom:"1rem", fontSize: "40px", fontWeight: 600}}>Search Doctor, Make an Appointment</Typography>
+         <Typography variant='h5' sx={{color: "#757575",  fontSize: "20px", marginBottom:"1rem"}}>Discover the best doctors, clinic & hospital the city nearest to you.</Typography>
+      </Box>
+    
+  
+  <Container sx={{mb: 5, mt:3}}>
+  <Grid container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 8, md: 12, lg: 12 }} paddingX={{md: 20}}>
+  <Grid item xs={4} sm={8} md={3}>
+  <TextField  id="filled-basic" fullWidth placeholder="Search Location"  InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <LocationOnIcon/>
+            </InputAdornment>
+          ),
+        }} />
+  
+  </Grid>
 
-        <Grid item xs={12} sm={6} md={6} sx={varticalCenter}>
-         <img
-         style={{width:'90%'}}
-         src={chair} alt="" />
-        </Grid>
-        
-      </Grid>
-    </Container>
+  <Grid item xs={4}  sm={8} md={8}>
+  <TextField  id="filled-basic" fullWidth placeholder="Search Doctors, Clinics, Hospitals, Diseases Etc" 
+   InputProps={{
+    startAdornment: (
+      <InputAdornment position="start">
+         <SearchIcon />
+      </InputAdornment>
+    ),
+  }}/>
+  </Grid>
+
+  <Grid item xs={4}  sm={8} md={1}>
+   <Button variant="contained" size="large" fullWidth sx={{textAlign: "left", backgroundColor: "#09e5ab", color:"white", py:2}}>
+      <Box display={{md: "none"}}>Search </Box>
+      <SearchIcon />
+   </Button> 
+  </Grid>
+  
+</Grid>
+  </Container>
+  
+      
+
+      <img src={ bottomimg} alt=""  style={{width: '100%'}}/>
+
+    </Box>
+   
     );
 };
 

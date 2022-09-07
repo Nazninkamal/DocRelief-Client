@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import Navigation from '../../Shared/Navigation/Navigation';
 import AppoinmentBanner from '../AppoinmentBanner/AppoinmentBanner';
@@ -8,14 +9,14 @@ import Services from '../Services/Services';
 
 const Home = () => {
     return (
-        <div>
+        <Box>
             <Navigation/>
             <Banner/>
             <Services/>
             {/* <DentalCare/> */}
             <AppoinmentBanner/>
             <OurDoctor/>
-        </div>
+        </Box>
     );
 };
 

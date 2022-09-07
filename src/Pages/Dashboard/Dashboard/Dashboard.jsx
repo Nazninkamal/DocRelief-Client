@@ -6,21 +6,16 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
-import { Link, NavLink } from 'react-router-dom';
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route, Link} from "react-router-dom";
 import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddDoctor from '../AddDoctor/AddDoctor';
+import useAuth from '../../../hooks/useAuth';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 
 
@@ -30,6 +25,7 @@ const drawerWidth = 200;
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { admin} = useAuth()
 
     // let {path, url} = useRouteMatch();
 
@@ -41,23 +37,20 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/appoinment"><Button color="inherit"><Button>Appoinment</Button></Button></Link>
+             
+            <Link style={{textDecoration:"none", color:"white"}}  to="/"><Button color="inherit"><Button>Home</Button></Button></Link>
+
+            <Link style={{textDecoration:"none", color:"white"}}  to="/appoinment"><Button color="inherit"><Button>Appoinment</Button></Button></Link>
            
-            <Link to='/dashboard/dashboardHome'> <Button>Dashboard </Button></Link>
-            <Link to='/dashboard/makeAdmin'><Button>Make Admin</Button></Link>
-            <Link to='/dashboard/addDoctor'><Button>Add Doctor</Button></Link>
+            <Link style={{textDecoration:"none", color:"white"}}  to='/dashboard/dashboardHome'> <Button>Dashboard </Button></Link>
+            
+            {admin && <Box>
+                <Link style={{textDecoration:"none", color:"white"}} to='/dashboard/makeAdmin'><Button>Make Admin</Button></Link>
+            <Link style={{textDecoration:"none", color:"white"}} to='/dashboard/addDoctor'><Button>Add Doctor</Button></Link>
+                </Box>}
             
           
-            {/* <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List> */}
+          
         </div>
     );
 
@@ -127,9 +120,9 @@ function Dashboard(props) {
             
             <Routes>
             <Route path="dashboardHome" element={ <DashboardHome/> } />
-            <Route path="makeAdmin" element={ <MakeAdmin/> } />
-            <Route path="addDoctor" element={ <AddDoctor/> } />
-            <Route path="makeAdmin" element={ <MakeAdmin/> } />
+            <Route path="makeAdmin" element={<AdminRoute><MakeAdmin/></AdminRoute>  } />
+            <Route path="addDoctor" element={<AdminRoute> <AddDoctor/></AdminRoute> } />
+
            
            
             </Routes>
