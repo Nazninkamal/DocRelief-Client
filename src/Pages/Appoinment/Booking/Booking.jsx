@@ -23,7 +23,10 @@ const Booking = ({ booking, date, setBookingSuccess }) => {
                     <Typography variant="caption" display="block" gutterBottom>
                         {space} SPACES AVAILABLE
                     </Typography>
-                    <Button onClick={handleBookingOpen} variant="contained">BOOK APPOINTMENT</Button>
+                    <Button onClick={handleBookingOpen}  variant="contained" size="large" 
+                         sx={{textAlign: "left", backgroundColor: "#09e5ab", color:"white"}}>
+                     BOOK APPOINTMENT
+                   </Button> 
                 </Paper>
             </Grid>
             <BookingModal

@@ -18,8 +18,8 @@ const Banner = () => {
     <Box sx={{ flexGrow: 1 }}>
      
       <Box sx={{mt: 10}}>
-         <Typography variant='h3' sx={{color: "#272b41", marginBottom:"1rem", fontSize: "40px", fontWeight: 600}}>Search Doctor, Make an Appointment</Typography>
-         <Typography variant='h5' sx={{color: "#757575",  fontSize: "20px", marginBottom:"1rem"}}>Discover the best doctors, clinic & hospital the city nearest to you.</Typography>
+         <Typography variant='h3' sx={{color: "#272b41", marginBottom:"1rem", fontSize: "40px", fontWeight: 600}}>Search Dentist, Make an Appointment</Typography>
+         <Typography variant='h5' sx={{color: "#757575",  fontSize: "20px", marginBottom:"1rem"}}>Discover the best Dentist, clinic & hospital the city nearest to you.</Typography>
       </Box>
     
   
