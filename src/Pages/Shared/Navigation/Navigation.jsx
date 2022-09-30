@@ -8,13 +8,11 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import useAuth from '../../../hooks/useAuth';
 import { Link, NavLink } from 'react-router-dom';
 
-// const pages = ['Products', 'Pricing', 'Blog'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const Navigation = () => {
   const {user, logout} = useAuth();
@@ -120,28 +118,20 @@ const Navigation = () => {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))} */}
-
+            
            <Link style={{textDecoration:"none", color:"white"}} to="/home">
             <Button color='inherit'>Home</Button>
             </Link>
-
-          
-
+            <Link style={{textDecoration:"none", color:"white"}} to="/contact">
+            <Button color='inherit'>Contact Us</Button>
+            </Link>
 
           </Box>
 
           <Link style={{textDecoration:"none", color:"white"}} to="/appoinment">
             <Button color='inherit'>Appoinment</Button>
             </Link>
+           
 {
   user?.email ?
   <Box>

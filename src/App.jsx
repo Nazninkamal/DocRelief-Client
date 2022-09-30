@@ -10,6 +10,7 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AddDoctor from './Pages/Dashboard/AddDoctor/AddDoctor';
+import Contact from './Pages/Contact/Contact';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
        <Route path="appoinment" element={<PrivateRoute><Appoinment/></PrivateRoute>}/>
        <Route path="login" element={<Login/>}/>
        <Route path="register" element={<Register/>}/>
+       <Route path="contact" element={<Contact/>}/>
+
       
                               {/* dashboard routes start */}
        <Route path="dashboard" element={<PrivateRoute><Dashboard/> </PrivateRoute>}>

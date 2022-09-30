@@ -1,14 +1,15 @@
 import { Button, Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
-import DentistCard from './DentistCard';
+import DentistCards from './DentistCards';
 
 const BookingDebtist = () => {
+    
     return (
         <Container sx={{mt:5}}>
-            <Grid container spacing={2}  xs={4} sm={8} md={12} lg={12}>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg:12 }}>
 
-               <Grid item xs={4} sm={3} md={4} lg={4} sx={{textAlign:"justify"}}>
+               <Grid item xs={4} sm={8} md={4} lg={4} sx={{textAlign:"justify"}}>
                     <Typography variant='h4'  sx={{color: "#272b41", marginBottom:"1rem", fontWeight: 600}}>Book Our Doctor</Typography>
                     <Typography variant='subtitle1' >It is a long established fact that a reader will be distracted by the
                      readable content of a page when looking at its layout. The point of using Lorem Ipsum.
@@ -19,8 +20,8 @@ const BookingDebtist = () => {
                </Grid>
 
  
-               <Grid item xs={4} sm={5} md={8} lg={8}>
-                    <DentistCard/>
+               <Grid item xs={4} sm={8} md={8} lg={8}>
+                    <DentistCards/>
                </Grid>
             </Grid>
         </Container>

@@ -6,12 +6,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
-// const varticalCenter={
-//   display:'flex',
-//   alignItems: 'center',
-//   height: 450
-
-// }
 
 const Banner = () => {
     return (
