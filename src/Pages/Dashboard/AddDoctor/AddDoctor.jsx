@@ -24,19 +24,19 @@ const AddDoctor = () => {
     return (
         <Container>
               <Grid item xs={4} sm={4} md={5} lg={5}  sx={{backgroundColor: "rgb(41 46 63)",textAlign: "start" }}>
-                {/* <Box sx={{color:"white", display:"flex", justifyContent:"end"}}><ClearIcon sx={{size:"large"}}/></Box> */}
                  <Box sx={{px:4}}>
                     <Typography variant='h4' sx={{color:"rgb(83 218 178)", py:3, textAlign:"center"}}>Add Doctor</Typography>
              
                 <form  onSubmit={handleSubmit(onSubmit)}>
                 <Box>
                 <Rating
-          sx={{ mt: 2 }}
+          sx={{ mt: 2 ,color: "white"}}
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
           }}
         />
+                  
 
                     <TextField 
                      required
@@ -47,7 +47,6 @@ const AddDoctor = () => {
                      fullWidth
                      size="small"  
                      sx={{backgroundColor:"#494d5c", my:1, borderRadius:"5px"}} 
-                   
                      name="email"
                      />
 
@@ -58,7 +57,7 @@ const AddDoctor = () => {
                      placeholder="Doctor's Name"
                      fullWidth 
                      size="small" 
-                     sx={{backgroundColor:"#494d5c", borderRadius:"5px"}} 
+                     sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
                      name="name"
                      />
                     <TextField 
@@ -77,10 +76,10 @@ const AddDoctor = () => {
                      placeholder='Location'  
                      fullWidth 
                      size="small" 
-                     sx={{backgroundColor:"#494d5c", borderRadius:"5px"}} 
+                     sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
                      name="location"/>
 
-                    {/* <TextField 
+                    <TextField 
                      required
                      inputProps={{ style: { color: 'white'}}} 
                      type="text" {...register("ratting")}
@@ -88,7 +87,7 @@ const AddDoctor = () => {
                      fullWidth 
                      size="small" 
                      sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
-                     name="ratting"/> */}
+                     name="ratting"/>
 
                     <TextField 
                      required
@@ -97,7 +96,7 @@ const AddDoctor = () => {
                      placeholder='Available Time'  
                      fullWidth 
                      size="small" 
-                     sx={{backgroundColor:"#494d5c", borderRadius:"5px"}} 
+                     sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
                      name="time"/>
 
                     <TextField 
@@ -132,7 +131,7 @@ const AddDoctor = () => {
                      sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
                      name="phone"/>
 
-                      <TextField 
+                    <TextField 
                      required
                      inputProps={{ style: { color: 'white'}}} 
                      type="text" {...register("currentPosition")}
@@ -141,6 +140,16 @@ const AddDoctor = () => {
                      size="small" 
                      sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
                      name="currentPosition"/>
+
+                     <TextField 
+                     required
+                     inputProps={{ style: { color: 'white'}}} 
+                     type="text" {...register("image")}
+                     placeholder='Image url'  
+                     fullWidth 
+                     size="small" 
+                     sx={{backgroundColor:"#494d5c", borderRadius:"5px",my:1}} 
+                     name="image"/>
 
 
                     <Button 

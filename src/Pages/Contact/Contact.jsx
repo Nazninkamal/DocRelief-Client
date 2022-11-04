@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import './Contact.css'
 import img from "../../images/Contact us-bro.png"
 import Navigation from '../Shared/Navigation/Navigation';
+import Footer from '../Shared/Footer/Footer';
 
 
 const Contact = () => {
@@ -114,6 +115,7 @@ const Contact = () => {
        </Grid>
        </Box>
       </Box>
+      <Footer/>
       </>
     );
 };

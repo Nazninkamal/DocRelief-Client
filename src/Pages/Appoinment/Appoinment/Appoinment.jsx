@@ -5,7 +5,7 @@ import AvailableAppoinment from '../AvailableAppoinment/AvailableAppoinment';
 
 const Appoinment = () => {
     const [date, setDate] = React.useState(new Date());
-
+    
     return (
         <div>
             <Navigation/>

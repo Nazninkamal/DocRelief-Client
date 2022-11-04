@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login.png';
+import Footer from '../../Shared/Footer/Footer';
+import Navigation from '../../Shared/Navigation/Navigation';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({})
@@ -32,6 +34,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Navigation/>
        <Container>
         <Grid container spacing={2}>
             <Grid item sx={{mt:15}} xs={12} md={6}>
@@ -81,6 +85,8 @@ const Login = () => {
             </Grid>
         </Grid>
        </Container>
+       <Footer/>
+       </>
     );
 };
 

@@ -11,6 +11,7 @@ import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AddDoctor from './Pages/Dashboard/AddDoctor/AddDoctor';
 import Contact from './Pages/Contact/Contact';
+import DentistDetails from './Pages/Home/BookingDentist/DentistDetails';
 
 
 function App() {
@@ -24,8 +25,10 @@ function App() {
        <Route path="login" element={<Login/>}/>
        <Route path="register" element={<Register/>}/>
        <Route path="contact" element={<Contact/>}/>
+       <Route path="dentistDetails/:dentistId" element={<DentistDetails/>}/>
 
-      
+
+
                               {/* dashboard routes start */}
        <Route path="dashboard" element={<PrivateRoute><Dashboard/> </PrivateRoute>}>
             <Route  path="dashboardHome" element={<DashboardHome/>}/>

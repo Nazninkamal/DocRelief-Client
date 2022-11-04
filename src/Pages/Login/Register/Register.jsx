@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { NavLink, useLocation , useNavigate} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login.png';
+import Footer from '../../Shared/Footer/Footer';
+import Navigation from '../../Shared/Navigation/Navigation';
 
 
 
@@ -34,6 +36,8 @@ import login from '../../../images/login.png';
         signInWithGoogle(location, navigate)
    }
     return (
+        <>
+        <Navigation/>
         <Container>
         <Grid container spacing={2}>
             <Grid item sx={{mt:15}} xs={12} md={6}>
@@ -103,6 +107,8 @@ import login from '../../../images/login.png';
             </Grid>
         </Grid>
        </Container>
+       <Footer/>
+       </>
     );
 };
 

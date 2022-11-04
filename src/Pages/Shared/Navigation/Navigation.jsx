@@ -114,9 +114,7 @@ const Navigation = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >
-            LOGO
-          </Typography>
+          > LOGO </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             
            <Link style={{textDecoration:"none", color:"white"}} to="/home">
