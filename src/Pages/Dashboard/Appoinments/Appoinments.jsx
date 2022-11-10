@@ -21,7 +21,7 @@ const Appointments = ({ date }) => {
         })
             .then(res => res.json())
             .then(data => setAppointments(data));
-    }, [date])
+    }, [date, token, user.email])
 
     return (
         <div>
