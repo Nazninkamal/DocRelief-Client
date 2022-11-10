@@ -13,32 +13,32 @@ import { Typography } from '@mui/material';
 const services= [
   {
     name: "Dental Implants",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:fluride
   },
   {
     name: "Dental Root canal",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:cavity
   },
   {
     name: "Teeth Whitening",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:whitening
   },
   {
     name: "Wisdom Teeth",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:whitening
   },
   {
     name: "Crowns Bridges",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:whitening
   },
   {
     name: "Cosmetic Dentis",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat quia recusandae eaque maxime ipsum omnis quos, ratione amet quibusdam .",
+    description:"We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.",
     img:whitening
   }
 ]
@@ -50,8 +50,7 @@ const Services = () => {
           <Typography variant='h4'  sx={{color:"272b41", fontWeight: 600,mt:5,mb:2}}>Services we provide</Typography>
           <img src={titleIcon} alt="" />
 <br />
-          <Typography variant='body1'  sx={{ color:"#757575", mt:3}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem
-              <br /> voluptatem obcaecati!</Typography><br />
+          <Typography variant='body1'  sx={{ color:"#757575", mt:3}}>A team of dentists working to ensure you receive the best treatment.</Typography><br />
                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                
                {

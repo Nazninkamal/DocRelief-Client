@@ -15,9 +15,10 @@ const WhoWeAre = () => {
               <Box sx={{textAlign:"justify"}}>
               <Typography variant='h6' sx={{color:"#4d72d0", my:2}}>Who we are -----</Typography>
                 <Typography variant='h4' sx={{color:"#272b41", fontWeight:700}}>We Have Advanced Technologies</Typography>
-                <Typography variant='subtitle1'  sx={{color:"#272b41", my:3}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </Typography>
+                <Typography variant='subtitle1'  sx={{color:"#272b41", my:3}}>We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.
+                Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications.
+
+                A team of dentists working to ensure you receive the best treatment.</Typography>
                
                 <Divider/>
                 <Typography variant="h6"  sx={{color:"#272b41", mt:3}}>Subscribe to our Newsletter</Typography>

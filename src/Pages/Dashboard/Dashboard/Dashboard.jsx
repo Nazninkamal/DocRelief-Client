@@ -34,7 +34,7 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div>
+        <Box>
             <Toolbar />
             <Divider />
              
@@ -51,7 +51,7 @@ function Dashboard(props) {
             
           
           
-        </div>
+        </Box>
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
@@ -77,7 +77,7 @@ function Dashboard(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Dashboard
+                        TeethRelief
                     </Typography>
                 </Toolbar>
             </AppBar>

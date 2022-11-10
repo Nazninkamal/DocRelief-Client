@@ -34,22 +34,28 @@ const Footer = () => {
                    <Box sx={{my:-8}}>
                    <img src={logo} alt="" width="60%" style={{marginTop:"10px"}}/>
                    
-                   <Typography variant='subtitle1' sx={{ color:"#b5b5b6",my:2}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius modtempor incididunt ut labore et dolore
-                        magna aliua. Ut enim ad minim</Typography>
+                   <Typography variant='subtitle1' sx={{ color:"#b5b5b6",my:2}}>A team of dentists working to ensure you receive the best treatment.
+                   DocRelief is a multiple award winner. A team of dentists working to ensure you receive the best treatment.</Typography>
                    <Box sx={{pb:3}}>
+                   <Box sx={{display:"flex"}}>
+                   <LocalPhoneIcon sx={{backgroundColor:"#5bc198", color:"white", padding:1, borderRadius:5,mt:-1, mr:2}}/>
+
                    <a href="tel:31234567890" style={{textDecoration:"none"}}>
-                     <Typography variant='body' sx={{color:"#b5b5b6"}}>
-                       <LocalPhoneIcon sx={{backgroundColor:"#5bc198", color:"white", padding:1, borderRadius:5}}/>
+                     <Typography variant='body' sx={{color:"#b5b5b6",mt:5}}>
                        31234567890
                      </Typography>
                    </a>
+                   </Box>
                    <br/>
+                   <Box sx={{display:"flex"}}>
+                   <MailOutlineIcon sx={{backgroundColor:"#5bc198", color:"white", padding:1, borderRadius:5, mt:-1,mr:2}}/>
+
                    <a href="mailto:info@mededin.com" style={{textDecoration:"none"}}>
-                     <Typography variant='body' sx={{color:"#b5b5b6"}}>
-                       <MailOutlineIcon sx={{backgroundColor:"#5bc198", color:"white", padding:1, borderRadius:5}}/>
+                     <Typography variant='body' sx={{color:"#b5b5b6",mt:5}} >
                        info@mededin.com
                      </Typography>
                    </a>
+                   </Box>
                    </Box>
                    </Box>
                    
@@ -63,44 +69,46 @@ const Footer = () => {
               <Typography variant='h6' sx={{color:"#5bc198"}}>Quick Links</Typography>
                 <Box sx={{position:" absolute",width:" 70px",height:" 5px",background: "#3c3f42"}}></Box>
                     <br/>
-                                   <Link to='/about' style={{textDecoration: "none"}}>
+                                   <Link to='/appoinment' style={{textDecoration: "none"}}>
                                     <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
-                                    About Us
+                                    Appoinment
                                     </Typography>
                                     </Link> <br />
 
-                                    <Link to='/mission' style={{textDecoration: "none"}}>
+                                    <Link to='/dashboard' style={{textDecoration: "none"}}>
                                     <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
-                                    Our Mission
+                                    Dashboard
                                     </Typography>
                                     </Link>
                                     <br />
 
-                                    <Link to='/service' style={{textDecoration: "none"}} >
+                                    <Link to='/dentiest' style={{textDecoration: "none"}} >
                                     <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
-                                    Our Service
+                                    Our Dentists
                                     </Typography> 
                                     </Link><br />
 
-                                    <Link to='/blogNews' style={{textDecoration: "none"}}>
+                                    <Link to='/contact' style={{textDecoration: "none"}} >
                                     <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
-                                    Blog & News
+                                    Contact Us
+                                    </Typography> 
+                                    </Link><br />
+
+                                    <Link to='/notfound' style={{textDecoration: "none"}}>
+                                    <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
+                                    404
                                     </Typography>
-                                    </Link><br />
-
-
-
-                                    <Link to='/transport' style={{textDecoration: "none"}} >
-                                    <Typography variant="h6" sx={{ color:"#b5b5b6", fontSize: 15}}>
-                                    Transport 
-                                    </Typography> 
                                     </Link>
+
+
+
+                                    
 
 
             </Grid>
 
             <Grid item xs={1} sm={4} md={2} sx={{textAlign:"left", mt:5}}>
-              <Typography variant='h6' sx={{color:"#5bc198"}}>Quick Links</Typography>
+              <Typography variant='h6' sx={{color:"#5bc198"}}>About</Typography>
                 <Box sx={{position:" absolute",width:" 70px",height:" 5px",background: "#3c3f42"}}></Box>
                     <br/>
                                    <Link to='/about' style={{textDecoration: "none"}}>

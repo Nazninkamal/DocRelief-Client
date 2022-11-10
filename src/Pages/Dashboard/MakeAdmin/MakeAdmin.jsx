@@ -1,6 +1,8 @@
-import { Alert, Button, TextField } from '@mui/material';
+import { Alert, Button, TextField, Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
+import bg from '../../../images/bottom-bg.png'
 
 const MakeAdmin = () => {
       const [email,setEmail] = useState('');
@@ -35,20 +37,23 @@ const MakeAdmin = () => {
       }
 
     return (
-        <div>
-          <h2>Make an Admin</h2>
+        <Box>
+          <Typography variant='h4' sx={{mt:5}}>Make an Admin</Typography>
           <form onSubmit={handleAdmitSubmit}>
-            <TextField
-            sx={{width: '50%'}}
+           <Box sx={{mt:8}}>
+           <TextField
+            sx={{width: '50%', mr:3}}
               lebel="Email" 
               type="email"
               onBlur={handleOnBlur}
               variant='standard'/>
             <Button type='submit' variant='contained'>Make Admin</Button>
+           </Box>
           
           </form>
           {success && <Alert severity='success'>Make Admin Successfully</Alert>}
-        </div>
+          <img src={bg} alt="" width="100%" style={{marginTop:"10rem"}}/>
+        </Box>
     );
 };
 

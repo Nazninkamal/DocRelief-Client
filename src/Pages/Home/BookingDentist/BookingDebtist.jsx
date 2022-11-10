@@ -6,7 +6,7 @@ import DentistCards from './DentistCards';
 const BookingDebtist = () => {
     
     return (
-        <Container sx={{mt:5}}>
+        <Container sx={{mt:5}} id="dentiest">
             <Grid container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 8, md: 12, lg:12 }}>
 
                <Grid item xs={4} sm={8} md={4} lg={4} sx={{textAlign:"justify"}}>

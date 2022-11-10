@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import './Contact.css'
 import img from "../../images/Contact us-bro.png"
 import Navigation from '../Shared/Navigation/Navigation';
-import Footer from '../Shared/Footer/Footer';
+import SendIcon from '@mui/icons-material/Send';
 
 
 const Contact = () => {
@@ -24,8 +24,9 @@ const Contact = () => {
     return (
       <>
       <Navigation/>
-      <Typography variant='h3' sx={{color: "#272b41",my:5, fontSize: "40px", fontWeight: 600}}>Contact Us</Typography>
-      <Box className='body'>
+      <Typography variant='h3' sx={{color: "#272b41",mt:5,mb:2, fontSize: "40px", fontWeight: 600}}>Contact Us</Typography>
+      <Typography variant='body' sx={{color: "#272b41" }}>Globally incubate standards compliant channels before scalable benefits. Quickly disseminate  <br />superior deliverables whereas web-enabled applications.</Typography>
+      <Box className='body' sx={{my:5}}>
       <Box sx={{ border:"rounded", boxShadow:" -4px 40px 45px -4px rgba(136,136,136,0.76)" }} width={{lg:"70%", md:"70%", sm:"80%", xs:"100%"}} >
            
      <Grid container columns={{ xs: 4, sm: 8, md: 12, lg:12 }} >
@@ -99,10 +100,10 @@ const Contact = () => {
                     <Button
                      type="submit"
                      variant='contained' 
-                    
                      fullWidth 
+                     endIcon={<SendIcon />}
                      sx={{background:"rgb(83 218 178)", color:"rgb(255 255 255)", fontWeight:600,borderRadius:"5px",mb:2}}>
-                    STAY UPDATED
+                    Send
                     </Button>
                     </Box>  
                 </form> 
@@ -115,7 +116,7 @@ const Contact = () => {
        </Grid>
        </Box>
       </Box>
-      <Footer/>
+      {/* <Footer/> */}
       </>
     );
 };

@@ -13,7 +13,7 @@ const MultiColumn = () => {
                <img src={img1} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> Specialised Service</Typography>
-               <Typography variant='body1' sx={{color:"#757575"}}>Lorem ipsum dolor sit</Typography>
+               <Typography variant='body1' sx={{color:"#757575"}}>We are a team of dentists</Typography>
               </Box>
             </Grid>
             {/* <Box sx={{width:" 1px",height:" 60px",background: "#3c3f42" }}></Box> */}
@@ -22,7 +22,7 @@ const MultiColumn = () => {
             <img src={img2} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> 24/7 Advanced Care</Typography>
-               <Typography variant='body1' sx={{color:"#757575"}}>Lorem ipsum dolor sit</Typography>
+               <Typography variant='body1' sx={{color:"#757575"}}>We are a team of hygienists</Typography>
               </Box>
 
             </Grid>
@@ -32,7 +32,7 @@ const MultiColumn = () => {
             <img src={img3} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> Get Result Online</Typography>
-               <Typography variant='body1' sx={{color:"#757575"}}>Lorem ipsum dolor sit</Typography>
+               <Typography variant='body1' sx={{color:"#757575"}}>We are a team of receptionists</Typography>
               </Box>
             </Grid>
 

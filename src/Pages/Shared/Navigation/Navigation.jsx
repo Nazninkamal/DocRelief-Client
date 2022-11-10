@@ -8,7 +8,8 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import AdbIcon from '@mui/icons-material/Adb';
+// import AdbIcon from '@mui/icons-material/Adb';
+import MedicationLiquidIcon from '@mui/icons-material/MedicationLiquid';
 import useAuth from '../../../hooks/useAuth';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -39,23 +40,23 @@ const Navigation = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <MedicationLiquidIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: "2rem",
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              // letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            TeethRelief
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -89,16 +90,18 @@ const Navigation = () => {
             >
           
 
-<Link to="/home">
-            <Button color='inherit'>Home</Button>
+            <Link to="/home" style={{textDecoration:"none"}} >
+            <Button  color='inherit'>Home</Button>
             </Link>
-
-            <Link to="/appoinment">
+            <Link style={{textDecoration:"none"}} to="/contact">
+            <Button color='inherit'>Contact Us</Button>
+            </Link>
+            <Link to="/appoinment" style={{textDecoration:"none"}} >
             <Button color='inherit'>Appoinment</Button>
             </Link>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <MedicationLiquidIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -109,12 +112,13 @@ const Navigation = () => {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontWeight: 900,
+
+              // letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
-          > LOGO </Typography>
+          > T-Relief </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             
            <Link style={{textDecoration:"none", color:"white"}} to="/home">
@@ -123,12 +127,12 @@ const Navigation = () => {
             <Link style={{textDecoration:"none", color:"white"}} to="/contact">
             <Button color='inherit'>Contact Us</Button>
             </Link>
-
-          </Box>
-
-          <Link style={{textDecoration:"none", color:"white"}} to="/appoinment">
+            <Link style={{textDecoration:"none", color:"white"}} to="/appoinment">
             <Button color='inherit'>Appoinment</Button>
             </Link>
+          </Box>
+
+        
            
 {
   user?.email ?

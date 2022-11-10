@@ -12,6 +12,7 @@ import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AddDoctor from './Pages/Dashboard/AddDoctor/AddDoctor';
 import Contact from './Pages/Contact/Contact';
 import DentistDetails from './Pages/Home/BookingDentist/DentistDetails';
+import NotFound from './Pages/Shared/NotFound';
 
 
 function App() {
@@ -33,10 +34,9 @@ function App() {
        <Route path="dashboard" element={<PrivateRoute><Dashboard/> </PrivateRoute>}>
             <Route  path="dashboardHome" element={<DashboardHome/>}/>
             <Route  path="makeAdmin" element={<MakeAdmin/>}/>
-            <Route  path="addDoctor" element={<AddDoctor/>}/>
-           
-            
+            <Route  path="addDoctor" element={<AddDoctor/>}/>  
        </Route>
+       <Route path="*" element={<NotFound />}></Route>
 
       </Routes>
       </AuthProvider>
