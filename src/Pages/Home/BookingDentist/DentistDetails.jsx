@@ -1,10 +1,10 @@
-import { Container, Grid, IconButton, Rating, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Navigation from '../../Shared/Navigation/Navigation';
 import StarIcon from '@mui/icons-material/Star';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 const DentistDetails = () => {
@@ -31,9 +31,14 @@ const DentistDetails = () => {
                  <Typography variant='body' sx={{color:"#757575"}}>{details?.experience}</Typography>
                  <Typography variant='h6' sx={{color:"#20c0f3"}}>Dentist</Typography>
                  <Typography variant='h6' sx={{color: "#faaf00"}}>< StarIcon/>< StarIcon/>< StarIcon/>< StarIcon/>< StarIcon/>({details?.ratting})</Typography>
-                 <Typography variant='body' sx={{color:"#757575"}}>Email: {details?.email}</Typography>
-              
+                 <Typography variant='body' sx={{color:"#757575"}}>Email: {details?.email}</Typography><br />
+                 
+                 <Link to="/appoinment"  style={{textDecoration:"none", color:"white"}} >
 
+                 <Button variant="contained" size="large"  sx={{ backgroundColor: "#09e5ab", color:"white", mt:3}}>
+                    Book Now
+                </Button>
+                </Link>
               </Grid>
 
               <Grid item  xs={4} sm={4} md={7} lg={7} sx={{textAlign:"left"}}>

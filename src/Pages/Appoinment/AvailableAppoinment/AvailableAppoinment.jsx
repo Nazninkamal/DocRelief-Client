@@ -53,9 +53,9 @@ const AvailableAppoinment = ({date}) => {
      }, []);
     return (
         <Container>
-        <Typography variant="h4" sx={{ color: 'info.main', mb: 3 }}>Available Appointments on {date.toDateString()}</Typography>
+        <Typography variant="h4" sx={{ color: 'info.main', my: 5 }}>Available Appointments on {date.toDateString()}</Typography>
         {bookingSuccess && <Alert severity="success">Appointment Booked successfully!</Alert>}
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{mb:5}}>
             {
                 bookings.map(booking => <Booking
                     key={booking.id}
