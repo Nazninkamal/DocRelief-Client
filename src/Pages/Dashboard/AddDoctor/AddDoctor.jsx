@@ -12,7 +12,7 @@ const AddDoctor = () => {
     const onSubmit = data => {
     console.log(data);
 
-    axios.post('http://localhost:5000/addDoctor', data)
+    axios.post('https://docrefief-server.vercel.app/addDoctor', data)
     .then(res => {
       if(res.data.insertedId){
         alert('added successfully');

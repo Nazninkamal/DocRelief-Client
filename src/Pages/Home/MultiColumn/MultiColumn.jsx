@@ -9,7 +9,7 @@ const MultiColumn = () => {
     return (
         <Container sx={{mt:5}}>
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            <Grid item xs={2} sm={4} md={4} sx={{display:"flex"}}>
+            <Grid item xs={4} sm={4} md={4} sx={{display:"flex"}}>
                <img src={img1} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> Specialised Service</Typography>
@@ -18,7 +18,7 @@ const MultiColumn = () => {
             </Grid>
             {/* <Box sx={{width:" 1px",height:" 60px",background: "#3c3f42" }}></Box> */}
 
-            <Grid item xs={2} sm={4} md={4} sx={{display:"flex"}}>
+            <Grid item xs={4} sm={4} md={4} sx={{display:"flex"}}>
             <img src={img2} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> 24/7 Advanced Care</Typography>
@@ -28,7 +28,7 @@ const MultiColumn = () => {
             </Grid>
             {/* <Box sx={{width:" 1px",height:" 60px",background: "#3c3f42" }}></Box> */}
 
-            <Grid item xs={2} sm={4} md={4} sx={{display:"flex"}}>
+            <Grid item xs={4} sm={4} md={4} sx={{display:"flex"}}>
             <img src={img3} alt="" />
               <Box sx={{mt:2, ml:3, textAlign:"left"}}>
               <Typography variant='h6' sx={{color:"#272b41"}}> Get Result Online</Typography>

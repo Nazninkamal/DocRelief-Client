@@ -13,7 +13,7 @@ const Contact = () => {
     const onSubmit = data => {
     console.log(data);
 
-    axios.post('http://localhost:5000/contact', data)
+    axios.post('https://docrefief-server.vercel.app/contact', data)
     .then(res => {
       if(res.data.insertedId){
         alert('added successfully');

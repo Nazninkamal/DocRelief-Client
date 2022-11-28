@@ -12,7 +12,7 @@ const DentistDetails = () => {
     const {dentistId} = useParams()
     const [details, setdetails] = useState({})
     useEffect(() =>{
-        fetch(`http://localhost:5000/addDoctor/${dentistId}`)
+        fetch(`https://docrefief-server.vercel.app/addDoctor/${dentistId}`)
         .then((res) => res.json())
           .then((data) => setdetails(data))
     } , [])

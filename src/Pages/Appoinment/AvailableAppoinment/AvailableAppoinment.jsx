@@ -47,7 +47,7 @@ const AvailableAppoinment = ({date}) => {
     const [bookings, setBooking] = useState([]);
     const [bookingSuccess, setBookingSuccess] = useState(false);
     React.useEffect(() =>{
-        fetch(`http://localhost:5000/addDoctor`)
+        fetch(`https://docrefief-server.vercel.app/addDoctor`)
         .then(res => res.json())
         .then(data => setBooking(data))
      }, []);

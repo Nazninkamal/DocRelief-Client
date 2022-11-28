@@ -51,7 +51,7 @@ const DentistCards = () => {
 
     const [reviews, setReviews] = React.useState([]);
     React.useEffect(() =>{
-       fetch(`http://localhost:5000/addDoctor`)
+       fetch(`https://docrefief-server.vercel.app/addDoctor`)
        .then(res => res.json())
        .then(data => setReviews(data))
     }, []);

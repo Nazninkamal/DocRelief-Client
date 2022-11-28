@@ -43,7 +43,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         // send to the server
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://docrefief-server.vercel.app/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

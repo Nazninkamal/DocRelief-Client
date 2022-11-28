@@ -16,7 +16,7 @@ const ShowAppoinments = ({date}) => {
    
    
     useEffect(() =>{
-        const url =`http://localhost:5000/appointments?email=${user.email}&date=${date} `
+        const url =`https://docrefief-server.vercel.app/appointments?email=${user.email}&date=${date} `
         fetch (url)
         .then(res => res.json())
         .then(data => setUseAppoinments(data))

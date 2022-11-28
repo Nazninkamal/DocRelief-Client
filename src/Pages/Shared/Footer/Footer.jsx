@@ -29,7 +29,7 @@ const Footer = () => {
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} sx={{mb:5}}>
             <Grid item xs={3} sm={4} md={5} >
               
-                <Box sx={{backgroundColor:"#33363a",width:"75%",textAlign:"justify",  boxShadow: "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"}}>
+                <Box width={{md:"75%", xs:"100%"}}  sx={{backgroundColor:"#33363a",textAlign:"justify",  boxShadow: "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"}}>
                   <Container>
                    <Box sx={{my:-8}}>
                    <img src={logo} alt="" width="60%" style={{marginTop:"10px"}}/>
